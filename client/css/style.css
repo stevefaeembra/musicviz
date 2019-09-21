@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Merriweather Sans', sans-serif;
+  box-sizing: content-box;
+}
+
+body {
+  height: 2000px;
+  /**background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 50%, #fbc2eb 100%);*/
+  background-color: #dde;
+}
+
+h1, h2 {
+  margin-left: .5rem;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #999;
+}
+
+
+form {
+  border: none;
+}
+
+hr {
+  margin: .25rem 0;
+}
+option {
+  min-width: 8ch;
+}
+
+table {
+  margin-top: 1rem;
+}
+
+body {
+  width: 50%;
+  margin: 0 auto;
+}
+
+td {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+div.row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+fieldset {
+  border: 0;
+}
+
+form, #scalename, #notenames {
+  margin: 0 0.5rem;
+}
+
+#scalename {
+  font-size: 3rem;
+}
+
+#notenames {
+  font-size: 2rem;
+}
+
+.romanTable {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.romanStep {
+  font-size: 1.5rem;
+  background-color: #444;
+  border-radius: .5rem;
+  color: white;
+  text-align: center;
+}
+
+.romanCard {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: 3px 4px #888888;
+  margin: .5rem;
+  padding: .5rem;
+  display: grid;
+  grid-template-rows: 1.5fr 1fr 1.5fr 1fr;
+}
+
+.chordName, .chordTones {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.romanDigit {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.romanStep.I {
+  background-color: maroon;
+  color: white;
+}
+
+.romanStep.III {
+  color: black;
+  background-color: lightblue;
+}
+
+.romanStep.IV {
+  color: black;
+  background-color: pink;
+}
+
+.romanStep.V {
+  background-color: red;
+}
+
+.romanStep.VI {
+  background-color: blue;
+}
+
+.romanStep.VII {
+  background-color: grey;
+}
+
+.romanStep.II {
+  background-color: lightgrey;
+}
+
+#keyboardwidget > .horizontal{
+  position: relative;
+  width: 14rem;
+  height: 6rem;
+  margin: 1rem .5rem;
+}
+
+#keyboardwidget > .vertical {
+  position: relative;
+  width: 6rem;
+  height: 14rem;
+  margin: 1rem .5rem;
+}
+
+.keyboard.horizontal {
+  position: relative;
+  width: 14rem;
+  height: 6rem;
+  margin: 2rem 0.5rem ;
+  color: red;
+}
+
+.keyboard.vertical {
+  position: relative;
+  width: 6rem;
+  height: 14rem;
+  margin: 2rem 0.5rem ;
+  transform: translate(4rem, 4rem) rotate(-90deg);
+  color: red;
+}
+
+/* Key types */
+.key_bk {
+  width: 1.2rem;
+  height: 4rem;
+  border: 2px solid grey;
+  background-color: white;
+  z-index: 100;
+}
+
+.key_bk.active {
+  width: 1.2rem;
+  height: 4rem;
+  border: 2px solid black;
+  background-color: red;
+  z-index: 100;
+}
+
+.key_bk.root {
+  width: 1.2rem;
+  height: 4rem;
+  border: 2px solid black;
+  background-color: maroon;
+  z-index: 100;
+}
+
+.key_w {
+  width: 2rem;
+  height: 6rem;
+  border: 2px solid black;
+  background-color: #fff;
+}
+
+.key_w.active {
+  width: 2rem;
+  height: 6rem;
+  border: 2px solid black;
+  background-color: red;
+  z-index:50;
+}
+
+.key_w.active.root {
+  width: 2rem;
+  height: 6rem;
+  border: 2px solid black;
+  background-color: maroon;
+  z-index:50;
+}
+
+/** Individual keys */
+
+.key_c {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+
+.key_csharp {
+  position: absolute;
+  top: 0rem;
+  left: 1.4rem;
+}
+
+.key_d {
+  position: absolute;
+  top: 0rem;
+  left: 2rem;
+}
+
+.key_dsharp {
+  position: absolute;
+  top: 0rem;
+  left: 3.4rem;
+}
+
+.key_e {
+  position: absolute;
+  top: 0rem;
+  left: 4rem;
+}
+.key_f {
+  position: absolute;
+  top: 0rem;
+  left: 6rem;
+}
+
+.key_fsharp {
+  position: absolute;
+  top: 0rem;
+  left: 7.4rem;
+}
+
+.key_g {
+  position: absolute;
+  top: 0rem;
+  left: 8rem;
+}
+
+.key_gsharp {
+  position: absolute;
+  top: 0rem;
+  left: 9.4rem;
+}
+
+.key_a {
+  position: absolute;
+  top: 0rem;
+  left: 10rem;
+}
+
+.key_asharp {
+  position: absolute;
+  top: 0rem;
+  left: 11.4rem;
+}
+
+.key_b {
+  position: absolute;
+  top: 0rem;
+  left: 12rem;
+}
+
+/** tonnetz widget */
+
+#tonnetzwidget {
+  margin: 1rem 0.5rem;
+}
+
+#tonnetz {
+  width:100%;
+  height:100%;
+  display: grid;
+  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(13,1fr);
+}
+
+.tonnetz-cell {
+  border: 1px solid black;
+  text-align: center;
+  color: #777;
+  border-radius: .5rem;
+  margin: .2rem;
+}
+
+.tonnetz-cell.active {
+  border: 1px solid black;
+  text-align: center;
+  background-color: red;
+  color:white;
+}
+
+.tonnetz-cell.active.root {
+  border: 1px solid black;
+  text-align: center;
+  background-color: maroon;
+  color:white;
+}
+
+/** notenames */
+
+#notenames {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+.notenames--note {
+  text-align: left;
+  font-size: 1.3rem;
+}
