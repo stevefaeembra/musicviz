@@ -1,4 +1,4 @@
 Example
 =======
 
-[Example](/img/demo.png)
+![Example](/img/demo.png)
